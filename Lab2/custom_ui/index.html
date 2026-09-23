@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Task Board</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <h1>Student Task Board</h1>
+    <p>Plan your week and track your progress</p>
+  </header>
+
+  <main class="container">
+
+    <!-- Summary numbers -->
+    <section class="stats">
+      <div class="stat total-stat">
+        <span class="stat-number">12</span>
+        <span class="stat-label">Total Tasks</span>
+      </div>
+      <div class="stat completed-stat">
+        <span class="stat-number">5</span>
+        <span class="stat-label">Completed</span>
+      </div>
+      <div class="stat progress-stat">
+        <span class="stat-number">4</span>
+        <span class="stat-label">In Progress</span>
+      </div>
+      <div class="stat pending-stat">
+        <span class="stat-number">3</span>
+        <span class="stat-label">Pending</span>
+      </div>
+    </section>
+
+    <!-- Three columns -->
+    <section class="board">
+
+      <div class="column todo-column">
+        <h2><span class="status-dot"></span>To Do</h2>
+
+        <div class="task">
+          <h3>Linear Algebra Assignment</h3>
+          <p>Solve questions 1 to 10 from chapter 3.</p>
+          <div class="tags">
+            <span class="tag">Maths</span>
+            <span class="tag urgent">Urgent</span>
+          </div>
+        </div>
+
+        <div class="task">
+          <h3>Read OS Notes</h3>
+          <p>Revise process scheduling before the quiz.</p>
+          <div class="tags">
+            <span class="tag">OS</span>
+          </div>
+        </div>
+
+        <div class="task">
+          <h3>Advisory Class Form</h3>
+          <p>Submit the form to the advisor.</p>
+          <div class="tags">
+            <span class="tag">Admin</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="column progress-column">
+        <h2><span class="status-dot"></span>In Progress</h2>
+
+        <div class="task">
+          <h3>Full Stack Lab 2</h3>
+          <p>Complete all five HTML and CSS tasks and push to GitHub.</p>
+          <div class="tags">
+            <span class="tag">Web</span>
+            <span class="tag urgent">Urgent</span>
+          </div>
+        </div>
+
+        <div class="task">
+          <h3>AI Project</h3>
+          <p>Write the report and prepare the demo.</p>
+          <div class="tags">
+            <span class="tag">AI</span>
+          </div>
+        </div>
+
+        <div class="task">
+          <h3>Algorithms Practice</h3>
+          <p>Practice sorting and searching problems.</p>
+          <div class="tags">
+            <span class="tag">DAA</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="column done-column">
+        <h2><span class="status-dot"></span>Done</h2>
+
+        <div class="task">
+          <h3>Class Timetable Page</h3>
+          <p>Built with HTML and CSS Grid.</p>
+          <div class="tags">
+            <span class="tag">Web</span>
+          </div>
+        </div>
+
+        <div class="task">
+          <h3>Management Quiz</h3>
+          <p>Completed and submitted.</p>
+          <div class="tags">
+            <span class="tag">Management</span>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Notes box with scrolling -->
+    <section class="notes">
+      <h2>Quick Notes</h2>
+      <div class="notes-box">
+        <p>Monday: Submit the AI lab file before 9 AM.</p>
+        <p>Tuesday: Linear Algebra quiz in the 12 PM slot.</p>
+        <p>Wednesday: Operating Systems lab, bring the manual.</p>
+        <p>Thursday: Full Stack lab, show all five tasks.</p>
+        <p>Friday: Advisory class, submit the form.</p>
+        <p>Weekend: Revise and start the next assignment.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>Made with HTML and CSS</p>
+  </footer>
+
+</body>
+</html>

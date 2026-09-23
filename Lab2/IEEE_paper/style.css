@@ -1,0 +1,68 @@
+/* ---------- Page ---------- */
+body {
+  background-color: #e5e5e5;
+  font-family: "Times New Roman", serif;
+  margin: 0;
+  padding: 30px 0;
+}
+
+/* The white paper sheet in the middle */
+.paper {
+  background-color: white;
+  width: 800px;
+  margin: 0 auto;
+  padding: 50px 60px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* ---------- Title section ---------- */
+.title-section {
+  text-align: center;
+}
+
+.title-section h1 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.authors {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* ---------- Abstract ---------- */
+.abstract {
+  font-size: 13px;
+  font-weight: bold;
+  text-align: justify;
+  margin: 25px 0;
+}
+
+/* ---------- Two column body ---------- */
+.content {
+  column-count: 2;
+  column-gap: 30px;
+  font-size: 13px;
+  text-align: justify;
+  line-height: 1.4;
+}
+
+.content h2 {
+  font-size: 13px;
+  text-align: center;
+  margin: 15px 0 8px 0;
+}
+
+.content h3 {
+  font-size: 13px;
+  font-style: italic;
+  margin: 10px 0 5px 0;
+}
+
+.content p {
+  margin: 0 0 8px 0;
+}
+
+.reference {
+  font-size: 12px;
+}

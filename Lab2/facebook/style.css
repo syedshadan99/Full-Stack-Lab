@@ -1,0 +1,222 @@
+/* ---------- Basics ---------- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+}
+
+/* ---------- Navbar ---------- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  height: 56px;
+  padding: 0 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  position: sticky;
+  top: 0;
+}
+
+.nav-left,
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 300px;
+}
+
+.nav-right {
+  justify-content: flex-end;
+}
+
+.logo {
+  background-color: #1877f2;
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+}
+
+.search {
+  background-color: #f0f2f5;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 14px;
+  width: 200px;
+  outline: none;
+}
+
+.nav-center {
+  display: flex;
+  gap: 8px;
+}
+
+.nav-icon {
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 22px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.nav-icon:hover {
+  background-color: #f0f2f5;
+}
+
+.nav-icon.active {
+  border-bottom: 3px solid #1877f2;
+  border-radius: 0;
+}
+
+.circle-icon {
+  width: 40px;
+  height: 40px;
+  background-color: #e4e6eb;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+/* ---------- Three column layout ---------- */
+.main {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 16px;
+}
+
+.left,
+.right {
+  width: 280px;
+}
+
+.feed {
+  width: 600px;
+}
+
+/* ---------- Sidebar items ---------- */
+.menu-item {
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.menu-item:hover {
+  background-color: #e4e6eb;
+}
+
+.right h3 {
+  color: #65676b;
+  padding-left: 12px;
+}
+
+/* ---------- Cards (white boxes) ---------- */
+.card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 14px;
+  margin-bottom: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  background-color: #1877f2;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-weight: bold;
+}
+
+/* ---------- Create post ---------- */
+.create-top {
+  display: flex;
+  gap: 10px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+.post-input {
+  flex: 1;
+  background-color: #f0f2f5;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 16px;
+  outline: none;
+}
+
+.create-bottom {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10px;
+}
+
+.post-option {
+  padding: 8px 14px;
+  border-radius: 8px;
+  color: #65676b;
+  cursor: pointer;
+}
+
+.post-option:hover {
+  background-color: #f0f2f5;
+}
+
+/* ---------- Posts ---------- */
+.post-header {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.time {
+  font-size: 13px;
+  color: #65676b;
+}
+
+.post-text {
+  margin: 12px 0;
+}
+
+.post-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.post-actions {
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid #ddd;
+  margin-top: 12px;
+  padding-top: 8px;
+}
+
+.action {
+  padding: 8px 20px;
+  border-radius: 8px;
+  color: #65676b;
+  cursor: pointer;
+}
+
+.action:hover {
+  background-color: #f0f2f5;
+}

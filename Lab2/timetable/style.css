@@ -1,0 +1,80 @@
+/* ---------- Page ---------- */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f8;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #1f2d3d;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #6b7785;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+/* ---------- The Grid ---------- */
+.timetable {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 6px;
+}
+
+/* A lab covers more than one hour, so it takes more columns */
+.lab-3 {
+  grid-column: span 3;
+}
+
+/* ---------- Boxes ---------- */
+.header {
+  background-color: #1f2d3d;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding: 14px 6px;
+  border-radius: 6px;
+}
+
+.theory {
+  background-color: #dbeafe;
+  color: #1e3a8a;
+  padding: 12px 8px;
+  border-radius: 6px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.lab {
+  background-color: #fde68a;
+  color: #78350f;
+  padding: 12px 8px;
+  border-radius: 6px;
+  font-size: 14px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.empty {
+  background-color: #e9edf1;
+  border-radius: 6px;
+}
+
+.legend {
+  text-align: center;
+  margin-top: 20px;
+  color: #444;
+}
+
+.legend-box {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 3px;
+  margin: 0 5px 0 15px;
+  vertical-align: middle;
+}

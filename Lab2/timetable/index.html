@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class Timetable</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>BSCS-V-A (Morning) Timetable</h1>
+  <p class="subtitle">Air University</p>
+
+  <div class="timetable">
+
+    <!-- Header row: 8 boxes -->
+    <div class="header">Day</div>
+    <div class="header">8:00 - 9:00</div>
+    <div class="header">9:00 - 10:00</div>
+    <div class="header">10:00 - 11:00</div>
+    <div class="header">11:00 - 12:00</div>
+    <div class="header">12:00 - 1:00</div>
+    <div class="header">1:00 - 2:00</div>
+    <div class="header">2:00 - 3:00</div>
+
+    <!-- Monday: 1 + 7 = 8 boxes -->
+    <div class="header">Mon</div>
+    <div class="theory">Artificial Intelligence<br>C-205</div>
+    <div class="theory">Operating Systems<br>Lecture Hall 01</div>
+    <div class="theory">Design and Analysis of Algorithms<br>C-202</div>
+    <div class="theory">Linear Algebra<br>C-301</div>
+    <div class="empty"></div>
+    <div class="theory">Intro to Management<br>C-303</div>
+    <div class="empty"></div>
+
+    <!-- Tuesday: 1 + 4 (lab) + 3 = 8 boxes -->
+    <div class="header">Tue</div>
+    <div class="lab lab-3">Artificial Intelligence Lab<br>Lab 5 A Block</div>
+    <div class="empty"></div>
+    <div class="theory">Linear Algebra<br>C-203</div>
+    <div class="theory">Design and Analysis of Algorithms<br>C-302</div>
+    <div class="theory">Operating Systems<br>Lecture Hall 01</div>
+
+    <!-- Wednesday: 1 day + 7 time slots -->
+    <div class="header">Wed</div>
+    <div class="theory">Design and Analysis of Algorithms<br>C-302</div>
+    <div class="empty"></div>
+    <div class="empty"></div>
+    <div class="lab lab-3">Operating Systems Lab<br>Lab 13 C Block</div>
+    <div class="theory">Full Stack Web Development<br>Lecture Hall 01</div>
+
+    <!-- Thursday: AI is 9:00 - 10:00, then the lab is 11:00 - 2:00 -->
+    <div class="header">Thu</div>
+    <div class="empty"></div>
+    <div class="theory">Artificial Intelligence<br>C-202</div>
+    <div class="empty"></div>
+    <div class="lab lab-3">Full Stack Web Development Lab<br>Lab 5 A Block</div>
+    <div class="theory">Full Stack Web Development<br>Lecture Hall 01</div>
+
+    <!-- Friday: classes start at 10:00 -->
+    <div class="header">Fri</div>
+    <div class="empty"></div>
+    <div class="empty"></div>
+    <div class="theory">Intro to Management<br>C-302</div>
+    <div class="theory">Linear Algebra<br>C-301</div>
+    <div class="theory">Advisory Class<br>C-202</div>
+    <div class="empty"></div>
+    <div class="empty"></div>
+
+  </div>
+
+</body>
+</html>
