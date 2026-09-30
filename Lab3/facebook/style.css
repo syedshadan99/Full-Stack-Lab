@@ -1,0 +1,61 @@
+.facebook-page {
+  background: #f0f2f5;
+}
+
+.facebook-page .social-navbar {
+  box-shadow: 0 2px 8px rgba(31, 45, 61, 0.12);
+}
+
+.facebook-page .social-logo {
+  width: 40px;
+  height: 40px;
+  display: inline-grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #1877f2;
+  color: white;
+  font-size: 1.65rem;
+  font-weight: 700;
+}
+
+.facebook-page .feed-card {
+  border: 0;
+  box-shadow: 0 1px 4px rgba(31, 45, 61, 0.16);
+}
+
+.facebook-page .social-avatar {
+  width: 40px;
+  height: 40px;
+  display: inline-grid;
+  place-items: center;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  background: #1877f2;
+  color: white;
+  font-weight: 700;
+}
+
+.facebook-page .post-action:hover,
+.facebook-page .sidebar-link:hover,
+.facebook-page .post-option:hover {
+  background: #f0f2f5;
+}
+
+.facebook-page .post-action,
+.facebook-page .post-option {
+  min-height: 42px;
+  padding: 0.55rem 0.35rem;
+  white-space: nowrap;
+}
+
+.facebook-page .feed-card {
+  padding: 1rem !important;
+}
+
+@media (max-width: 380px) {
+  .facebook-page .post-action,
+  .facebook-page .post-option {
+    font-size: 0.8rem;
+    white-space: normal;
+  }
+}

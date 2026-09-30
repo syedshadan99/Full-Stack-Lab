@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Facebook | Bootstrap</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="facebook-page">
+  <nav class="navbar navbar-expand-lg bg-white sticky-top social-navbar">
+    <div class="container-fluid px-3">
+      <a class="social-logo text-decoration-none me-2" href="#">f</a>
+      <form class="d-none d-md-flex" role="search"><input class="form-control rounded-pill bg-light border-0" type="search" placeholder="Search Facebook" aria-label="Search Facebook"></form>
+      <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#socialNav" aria-controls="socialNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="socialNav">
+        <div class="navbar-nav mx-auto text-center gap-lg-2 my-2 my-lg-0">
+          <a class="nav-link active border-bottom border-primary border-3 px-4" href="#">🏠</a><a class="nav-link px-4" href="#">👥</a><a class="nav-link px-4" href="#">▶️</a><a class="nav-link px-4" href="#">🛒</a>
+        </div>
+        <div class="d-flex justify-content-center gap-2"><button class="btn btn-light rounded-circle" aria-label="Messages">💬</button><button class="btn btn-light rounded-circle" aria-label="Notifications">🔔</button><button class="btn btn-primary rounded-circle">S</button></div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container-fluid py-4 px-3 px-lg-4">
+    <div class="row g-4 justify-content-center">
+      <aside class="col-12 col-md-3 col-xl-2 order-2 order-md-1">
+        <nav class="d-grid gap-1" aria-label="Facebook sidebar">
+          <a class="sidebar-link rounded p-2 text-decoration-none text-dark" href="#">👤 Shadan</a><a class="sidebar-link rounded p-2 text-decoration-none text-dark" href="#">👥 Friends</a><a class="sidebar-link rounded p-2 text-decoration-none text-dark" href="#">🕒 Memories</a><a class="sidebar-link rounded p-2 text-decoration-none text-dark" href="#">🔖 Saved</a><a class="sidebar-link rounded p-2 text-decoration-none text-dark" href="#">👪 Groups</a><a class="sidebar-link rounded p-2 text-decoration-none text-dark" href="#">🎬 Video</a><a class="sidebar-link rounded p-2 text-decoration-none text-dark" href="#">🏪 Marketplace</a>
+        </nav>
+      </aside>
+
+      <section class="col-12 col-md-7 col-xl-6 order-1 order-md-2">
+        <div class="card feed-card mb-3 p-3">
+          <div class="d-flex gap-2 align-items-center border-bottom pb-3"><div class="social-avatar">S</div><input class="form-control rounded-pill bg-light border-0" type="text" placeholder="What's on your mind, Shadan?"></div>
+          <div class="row g-1 pt-2 text-center"><div class="col-4"><button class="post-option btn w-100 text-secondary">🎥 Live video</button></div><div class="col-4"><button class="post-option btn w-100 text-secondary">🖼️ Photo/video</button></div><div class="col-4"><button class="post-option btn w-100 text-secondary">😊 Feeling</button></div></div>
+        </div>
+
+        <article class="card feed-card mb-3 p-3">
+          <div class="d-flex gap-2 align-items-center"><div class="social-avatar">S</div><div><div class="fw-bold">Shadan Raza</div><small class="text-secondary">2 hrs · 🌍</small></div></div>
+          <p class="my-3">Finished my first HTML and CSS project today. Learning web development is fun!</p>
+          <img class="img-fluid rounded" src="lab_task_ss.png" alt="My HTML and CSS Lab Tasks">
+          <div class="row g-1 border-top mt-3 pt-2 text-center"><div class="col-4"><button class="post-action btn w-100 text-secondary">👍 Like</button></div><div class="col-4"><button class="post-action btn w-100 text-secondary">💬 Comment</button></div><div class="col-4"><button class="post-action btn w-100 text-secondary">↗️ Share</button></div></div>
+        </article>
+
+        <article class="card feed-card p-3">
+          <div class="d-flex gap-2 align-items-center"><div class="social-avatar">F</div><div><div class="fw-bold">Fatima Noor</div><small class="text-secondary">5 hrs · 🌍</small></div></div>
+          <p class="my-3">Air University lab session was great today. Who else is working on the Lab 2 tasks?</p>
+          <div class="row g-1 border-top pt-2 text-center"><div class="col-4"><button class="post-action btn w-100 text-secondary">👍 Like</button></div><div class="col-4"><button class="post-action btn w-100 text-secondary">💬 Comment</button></div><div class="col-4"><button class="post-action btn w-100 text-secondary">↗️ Share</button></div></div>
+        </article>
+      </section>
+
+      <aside class="col-12 col-md-2 order-3"><h2 class="h6 text-secondary mb-3">Contacts</h2><div class="d-grid gap-1"><a class="sidebar-link rounded p-2 text-decoration-none text-dark" href="#">🟢 Hamza Rehman</a><a class="sidebar-link rounded p-2 text-decoration-none text-dark" href="#">🟢 Fatima Noor</a><a class="sidebar-link rounded p-2 text-decoration-none text-dark" href="#">🟢 Usman Ahmed</a><a class="sidebar-link rounded p-2 text-decoration-none text-dark" href="#">🟢 Amna zadi</a><a class="sidebar-link rounded p-2 text-decoration-none text-dark" href="#">🟢 Ali Khan</a></div></aside>
+    </div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

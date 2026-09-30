@@ -1,0 +1,47 @@
+/* Colors used in the whole site */
+:root {
+  --primary: #2f6f73;
+  --primary-dark: #245659;
+  --accent: #e8a33d;
+  --bg: #f3f5f4;
+  --text: #22313a;
+  --muted: #66767f;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* Navbar */
+.navbar-shop { background: var(--primary); }
+.navbar-shop .navbar-brand { font-weight: 700; font-size: 1.4rem; }
+.navbar-shop .nav-link { color: #fff; }
+.navbar-shop .nav-link:hover { color: var(--accent); }
+
+/* Buttons */
+.btn-shop { background: var(--primary); color: #fff; border: none; }
+.btn-shop:hover { background: var(--primary-dark); color: #fff; }
+.btn-accent { background: var(--accent); color: var(--text); border: none; font-weight: 600; }
+.btn-accent:hover { background: #d4902a; color: var(--text); }
+
+/* Hero */
+.hero { background: #dde9e7; padding: 80px 0; }
+.hero h1 { font-weight: 700; }
+
+/* Cards */
+.card-shop {
+  background: #fff;
+  border: 1px solid #e0e7e5;
+  border-radius: 12px;
+}
+
+/* Small helpers */
+.section-title { font-weight: 700; margin-bottom: 8px; }
+.price { color: var(--primary); font-weight: 700; }
+.stars { color: var(--accent); }
+.text-muted-shop { color: var(--muted); }
+
+/* Footer */
+.footer { background: var(--primary-dark); color: #dbe7e6; padding: 24px 0; margin-top: 60px; }

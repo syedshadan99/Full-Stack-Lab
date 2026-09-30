@@ -1,0 +1,221 @@
+:root {
+  --ink: #1f2d3d;
+  --page: #f4f7fb;
+  --surface: #ffffff;
+  --brand: #167d8d;
+  --brand-soft: #e7f3f4;
+  --success: #23805b;
+  --success-soft: #eaf5ed;
+  --warning: #a96518;
+  --warning-soft: #fbf1df;
+  --danger: #be4b50;
+  --line: #e2e8f0;
+  --shadow: 0 10px 30px rgba(31, 45, 61, 0.08);
+}
+
+body {
+  background: var(--page);
+  color: var(--ink);
+}
+
+.lab3-brand-gradient {
+  background: linear-gradient(120deg, #17324d, #176b79 58%, #299b91);
+}
+
+.lab3-surface {
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.task-board-page main {
+  max-width: 1180px;
+}
+
+.task-board-page header {
+  border-bottom: 5px solid #a5d8f3;
+}
+
+.task-board-page header p {
+  color: #e3f4ff !important;
+}
+
+.task-board-page .stat-card {
+  border: 1px solid #e5ebf3;
+  border-bottom: 5px solid var(--brand);
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(31, 45, 61, 0.07);
+  padding: 1.25rem !important;
+}
+
+.task-board-page .stat-card.completed { border-bottom-color: var(--success); }
+.task-board-page .stat-card.progress { border-bottom-color: var(--warning); }
+.task-board-page .stat-card.pending { border-bottom-color: var(--danger); }
+.task-board-page .stat-card.completed { background: #f1f8f3; }
+.task-board-page .stat-card.progress { background: #fcf7ed; }
+.task-board-page .stat-card.pending { background: #fcf1f1; }
+
+.task-board-page .stat-number {
+  color: var(--brand);
+  font-size: 2.1rem;
+  font-weight: 700;
+}
+
+.task-board-page .completed .stat-number { color: var(--success); }
+.task-board-page .progress .stat-number { color: var(--warning); }
+.task-board-page .pending .stat-number { color: var(--danger); }
+
+.task-board-page .overview-card {
+  border: 1px solid #dbe7eb;
+  border-top: 4px solid #299b91;
+  border-radius: 12px;
+  box-shadow: 0 7px 18px rgba(31, 45, 61, 0.06);
+}
+
+.task-board-page .overview-card h2 {
+  color: #20546a;
+}
+
+.task-board-page .overview-count {
+  color: #176568;
+  font-size: 1.2rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.task-board-page .overview-progress {
+  height: 0.7rem;
+  background: #e4edef;
+}
+
+.task-board-page .overview-progress .progress-bar {
+  background: linear-gradient(90deg, #167d8d, #299b91);
+}
+
+.task-board-page .deadline-item {
+  padding: 0.65rem 0.75rem;
+  border-radius: 8px;
+  background: #f2f7f8;
+  color: #34495e;
+  font-size: 0.92rem;
+}
+
+.task-board-page .deadline-label {
+  color: #176568;
+  font-size: 0.82rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.task-board-page .column-panel {
+  border: 1px solid #d9e4f3;
+  border-top: 5px solid var(--brand);
+  background: var(--brand-soft);
+  padding: 1.25rem !important;
+  border-radius: 12px;
+}
+
+.task-board-page .column-panel.progress-panel {
+  border-top-color: var(--warning);
+  background: var(--warning-soft);
+}
+
+.task-board-page .column-panel.done-panel {
+  border-top-color: var(--success);
+  background: var(--success-soft);
+}
+
+.task-board-page .column-panel h2 {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+}
+
+.task-board-page .column-panel h2 .badge {
+  width: 12px;
+  height: 12px;
+  padding: 0;
+}
+
+.task-board-page .task-card {
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--brand);
+  padding: 1rem !important;
+  border-radius: 9px;
+  box-shadow: 0 3px 8px rgba(31, 45, 61, 0.05);
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.task-board-page .progress-panel .task-card { border-left-color: var(--warning); }
+.task-board-page .done-panel .task-card { border-left-color: var(--success); }
+
+.task-board-page .task-card h3 {
+  color: #243b53;
+  line-height: 1.35;
+}
+
+.task-board-page .task-card .badge {
+  display: inline-flex;
+  align-items: center;
+  margin: 0 0.35rem 0.3rem 0;
+  padding: 0.45rem 0.75rem;
+  line-height: 1.2;
+  white-space: normal;
+}
+
+.task-board-page .task-card .badge:not(.text-bg-danger) {
+  background-color: #dcefee !important;
+  color: #176568 !important;
+}
+
+.task-board-page .task-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(31, 45, 61, 0.1);
+}
+
+.task-board-page .notes-box {
+  height: 155px;
+  overflow-y: auto;
+  border: 1px solid var(--line);
+  background: #f9fbfe;
+}
+
+.task-board-page main > section:last-child {
+  border-radius: 12px;
+}
+
+.task-board-page main > section:last-child h2 {
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid #dcefee;
+  color: #20546a;
+}
+
+.task-board-page .notes-box p {
+  position: relative;
+  padding-left: 1.6rem !important;
+  border-bottom: 1px solid var(--line);
+  color: #475569;
+}
+
+.task-board-page .notes-box p::before {
+  position: absolute;
+  top: 0.72rem;
+  left: 0.55rem;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #299b91;
+  content: "";
+}
+
+.task-board-page .notes-box p:last-child { border-bottom: 0; }
+
+@media (max-width: 575.98px) {
+  .task-board-page .stat-number {
+    font-size: 1.8rem;
+  }
+
+  .task-board-page .column-panel,
+  .task-board-page .task-card {
+    padding: 0.9rem !important;
+  }
+}

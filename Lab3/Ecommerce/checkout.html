@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shopora - Checkout</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-shop sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Shopora</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#products">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#reviews">Reviews</a></li>
+          <li class="nav-item"><a class="nav-link" href="add-product.html">Add Product</a></li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="cart.html">Cart <span class="badge bg-warning text-dark">3</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+          <li class="nav-item"><a class="nav-link" href="signup.html">Sign up</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- CHECKOUT -->
+  <div class="container py-5">
+    <h2 class="section-title">Checkout</h2>
+    <p class="text-muted-shop mb-4">Enter your delivery details to place the order.</p>
+
+    <div class="row g-4">
+
+      <!-- Delivery form -->
+      <div class="col-lg-8">
+        <div class="card card-shop p-4">
+          <h5 class="mb-3">Delivery details</h5>
+          <form>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label">Full name</label>
+                <input type="text" class="form-control" placeholder="Enter your name">
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Phone</label>
+                <input type="tel" class="form-control" placeholder="03XX XXXXXXX">
+              </div>
+              <div class="col-12">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control" placeholder="Enter your email">
+              </div>
+              <div class="col-12">
+                <label class="form-label">Address</label>
+                <input type="text" class="form-control" placeholder="House no, street, area">
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">City</label>
+                <input type="text" class="form-control" placeholder="City">
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Postal code</label>
+                <input type="text" class="form-control" placeholder="Postal code">
+              </div>
+            </div>
+
+            <h5 class="mt-4 mb-3">Payment method</h5>
+            <div class="form-check mb-2">
+              <input class="form-check-input" type="radio" name="payment" id="cod" checked>
+              <label class="form-check-label" for="cod">Cash on delivery</label>
+            </div>
+            <div class="form-check mb-4">
+              <input class="form-check-input" type="radio" name="payment" id="card">
+              <label class="form-check-label" for="card">Debit / credit card</label>
+            </div>
+
+            <button type="submit" class="btn btn-accent btn-lg w-100">Place order</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Order summary -->
+      <div class="col-lg-4">
+        <div class="card card-shop p-4">
+          <h5 class="mb-3">Your order</h5>
+          <div class="d-flex justify-content-between mb-2"><span>Wireless Headphones x 1</span><span>Rs. 4,500</span></div>
+          <div class="d-flex justify-content-between mb-2"><span>Smart Watch x 2</span><span>Rs. 13,000</span></div>
+          <div class="d-flex justify-content-between mb-2"><span>Travel Backpack x 1</span><span>Rs. 3,200</span></div>
+          <div class="d-flex justify-content-between mb-2"><span>Shipping</span><span>Rs. 200</span></div>
+          <hr>
+          <div class="d-flex justify-content-between fw-bold"><span>Total</span><span class="price">Rs. 20,900</span></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer text-center">
+    <div class="container">&copy; 2026 Shopora. University project.</div>
+  </footer>
+
+  <!-- Bootstrap JS: only needed for the mobile menu button -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+:root {
+  --ink: #17324d;
+  --teal: #167d8d;
+  --soft-blue: #edf4f7;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.portfolio-page .hero {
+  background: #17324d !important;
+  border-bottom: 6px solid #57b7ad;
+}
+
+.portfolio-page .navbar {
+  background: #17324d !important;
+  box-shadow: 0 3px 12px rgba(17, 41, 62, 0.2);
+}
+
+.portfolio-page .navbar-brand {
+  letter-spacing: 0.02em;
+}
+
+.portfolio-page .nav-link {
+  padding: 0.65rem 0.8rem !important;
+}
+
+.portfolio-page .nav-link:hover,
+.portfolio-page .nav-link:focus {
+  color: #8de0d1;
+}
+
+.portfolio-page .profile-image {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  object-position: center 35%;
+  border: 5px solid #57b7ad;
+  box-shadow: 0 0 0 8px rgba(87, 183, 173, 0.16);
+}
+
+.portfolio-page .section-band.light {
+  background: var(--soft-blue);
+}
+
+.portfolio-page .section-band {
+  scroll-margin-top: 76px;
+}
+
+.portfolio-page .section-band .container {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.portfolio-page .section-heading {
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.portfolio-page .section-heading::after {
+  content: "";
+  display: block;
+  width: 48px;
+  height: 4px;
+  margin: 0.75rem auto 0;
+  border-radius: 4px;
+  background: #57b7ad;
+}
+
+.portfolio-page #about p {
+  max-width: 760px;
+  margin: 0 auto;
+  color: #4b5c6b;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.portfolio-page #skills .badge {
+  background: #d8efeb !important;
+  color: #155e63 !important;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 0.7rem 1rem !important;
+}
+
+.portfolio-page #experience .card,
+.portfolio-page #projects .card {
+  border-radius: 10px;
+  border-top: 4px solid #57b7ad !important;
+  background: #fff;
+}
+
+.portfolio-page .project-card,
+.portfolio-page .experience-card {
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.portfolio-page .project-card:hover,
+.portfolio-page .experience-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 24px rgba(31, 45, 61, 0.14) !important;
+}
+
+.portfolio-page .btn {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.portfolio-page .project-card,
+.portfolio-page .experience-card {
+  padding: 1.25rem !important;
+}
+
+.portfolio-page #contact {
+  background: #e8f2f2;
+}
+
+.portfolio-page #contact p {
+  margin-bottom: 0.75rem;
+}
+
+.portfolio-page #contact a {
+  color: #126b78;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+
+.portfolio-page footer {
+  background: #17324d !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html,
+  .portfolio-page .project-card,
+  .portfolio-page .experience-card {
+    scroll-behavior: auto;
+    transition: none;
+  }
+}

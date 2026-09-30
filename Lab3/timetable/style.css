@@ -1,0 +1,98 @@
+:root {
+  --ink: #1f2d3d;
+}
+
+body {
+  background: #f4f7fb;
+  color: var(--ink);
+}
+
+.timetable-page main {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.timetable-page header {
+  padding: 1.4rem 1rem;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 6px 18px rgba(31, 45, 61, 0.08);
+}
+
+.timetable-page header h1 {
+  color: #17324d;
+}
+
+.timetable-page header p {
+  color: #167d8d !important;
+  font-weight: 600;
+}
+
+.timetable-page .schedule-table {
+  min-width: 1060px;
+  table-layout: fixed;
+  border-collapse: separate;
+  border-spacing: 4px;
+  background: #f4f7fb;
+}
+
+.timetable-page .schedule-table th,
+.timetable-page .schedule-table td {
+  vertical-align: middle;
+  text-align: center;
+  min-width: 136px;
+  height: 96px;
+  padding: 0.85rem 0.7rem;
+  line-height: 1.5;
+  border: 0;
+  border-radius: 7px;
+}
+
+.timetable-page .schedule-table th {
+  background: #17324d;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.timetable-page .schedule-table .day-cell {
+  min-width: 74px;
+  background: #167d8d;
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.timetable-page .theory-cell {
+  background: #e4f0fa;
+  color: #234d70;
+  box-shadow: inset 0 0 0 1px #c8ddec;
+}
+
+.timetable-page .lab-cell {
+  background: #f8e6b7;
+  color: #70491c;
+  font-weight: 700;
+  box-shadow: inset 0 0 0 1px #e8d19a;
+}
+
+.timetable-page .empty-cell {
+  background: #e8edf1;
+  box-shadow: inset 0 0 0 1px #dce3e9;
+}
+
+.timetable-page .schedule-table td:not(.empty-cell) {
+  font-size: 0.9rem;
+}
+
+.timetable-page .table-responsive {
+  padding: 0.35rem;
+  border: 1px solid #dbe3ec;
+  background: #fff;
+  box-shadow: 0 10px 24px rgba(31, 45, 61, 0.1) !important;
+}
+
+.timetable-page .badge.theory-cell,
+.timetable-page .badge.lab-cell {
+  padding: 0.6rem 0.85rem;
+  font-size: 0.85rem;
+}
